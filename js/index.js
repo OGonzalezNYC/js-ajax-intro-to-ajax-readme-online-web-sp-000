@@ -41,7 +41,7 @@ function showCommits() {
   individualCommit.author.login + 
   '</strong> - ' + 
   individualCommit.commit.message + 
-  '</li>')}</ul>`;
+  '</li>').join('')}</ul>`;
   
   document.getElementById('commits').innerHTML = commitsList;
 }
